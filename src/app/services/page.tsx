@@ -46,7 +46,7 @@ export default function ServicesPage() {
       />
       <PageHeader
         title="Services"
-        description="Interior detailing, exterior detailing, full detail, engine bay cleaning, and mobile detailing — delivered to your location."
+        description="Interior detailing, exterior detailing, full detail, engine bay cleaning, and mobile detailing delivered to your location."
       />
 
       <section className="py-section-mobile md:py-section-tablet lg:py-section-desktop">

@@ -24,7 +24,7 @@ export const ctaCopy = {
 export const footerCopy = {
   tagline: "Professional Mobile Auto Detailing",
   description:
-    "Interior and exterior detailing for cars, trucks, and SUVs — delivered to your home or workplace in Mukilteo, Washington.",
+    "Interior and exterior detailing for cars, trucks, and SUVs, delivered to your home or workplace in Mukilteo, Washington.",
   callToday: "Call Today",
   businessHours: "Business Hours",
   privacy: "Privacy Policy",

@@ -43,11 +43,7 @@ export function ContactCard({ className }: ContactCardProps) {
             <Mail className="h-24 w-24 shrink-0" strokeWidth={1.5} aria-hidden />
             {contactEmail}
           </a>
-        ) : (
-          <Paragraph size="small" className="text-gray-dark">
-            [PLACEHOLDER] Email — set CONTACT_EMAIL
-          </Paragraph>
-        )}
+        ) : null}
 
         <a
           href={businessConfig.socials.instagram}
@@ -70,12 +66,14 @@ export function ContactCard({ className }: ContactCardProps) {
         </Paragraph>
       ) : null}
 
-      <div>
-        <Paragraph className="font-medium">{footerCopy.businessHours}</Paragraph>
-        <Paragraph size="small" className="mt-8 text-gray-dark">
-          {businessConfig.hoursPlaceholder}
-        </Paragraph>
-      </div>
+      {businessConfig.hours ? (
+        <div>
+          <Paragraph className="font-medium">{footerCopy.businessHours}</Paragraph>
+          <Paragraph size="small" className="mt-8 text-gray-dark">
+            {businessConfig.hours}
+          </Paragraph>
+        </div>
+      ) : null}
     </Card>
   );
 }

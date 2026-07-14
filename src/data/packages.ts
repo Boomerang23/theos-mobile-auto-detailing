@@ -23,7 +23,7 @@ export const pricingPackages: PricingTier[] = [
     id: "basic-detail",
     name: "Basic Detail",
     description:
-      "Essential exterior wash and interior refresh — ideal for maintaining a clean, presentable vehicle between full details.",
+      "Essential exterior wash and interior refresh, ideal for maintaining a clean, presentable vehicle between full details.",
     duration: "2–3 hours",
     prices: {
       sedan: 180,
@@ -76,14 +76,14 @@ export const pricingPackages: PricingTier[] = [
     notes: [
       "Larger vehicles include SUVs, trucks, and minivans.",
       "Leather and fabric treatments applied based on your vehicle\u2019s interior materials.",
-      "Heavily soiled interiors may require additional time and cost — quoted before work starts.",
+      "Heavily soiled interiors may require additional time and cost, quoted before work starts.",
     ],
   },
   {
     id: "platinum-detail",
     name: "Platinum Detail",
     description:
-      "Our most comprehensive package — full interior restoration, paint correction, and premium protection for show-quality results.",
+      "Our most comprehensive package with full interior restoration, paint correction, and premium protection for show-quality results.",
     duration: "4–8 hours",
     prices: {
       sedan: 450,
@@ -108,7 +108,7 @@ export const pricingPackages: PricingTier[] = [
       "Larger vehicles include SUVs, trucks, and minivans.",
       "Service duration varies based on vehicle size and condition.",
       "Paint correction scope is assessed on-site; severe damage may require a separate quote.",
-      "Engine bay detail performed only when safe and accessible — electrical components protected.",
+      "Engine bay detail performed only when safe and accessible. Electrical components are protected.",
     ],
   },
 ];

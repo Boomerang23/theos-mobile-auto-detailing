@@ -4,16 +4,10 @@ export const aboutCopy = {
   pageTitle: "About Theo",
   pageDescription: `Meet the detailer behind ${businessConfig.name} in ${businessConfig.location}.`,
   introTitle: businessConfig.name,
-  /**
-   * [PLACEHOLDER] Replace with Theo's preferred short introduction.
-   */
   intro:
-    "[PLACEHOLDER] Theo is a mobile auto detailer based in Mukilteo, Washington. He brings professional interior and exterior detailing directly to your home or workplace — with careful attention to every vehicle.",
-  /**
-   * [PLACEHOLDER] Replace with a short quality / customer-care statement from Theo.
-   */
+    "Theo is a mobile auto detailer based in Mukilteo, Washington. He brings professional interior and exterior detailing directly to your home or workplace.",
   qualityStatement:
-    "[PLACEHOLDER] Every job is handled with care, clear communication, and a focus on results you can see and feel.",
+    "Every job is handled with care, clear communication, and a focus on lasting results.",
   tagline: businessConfig.tagline,
   photoSrc: "/images/about/theo.jpg",
   photoAlt: "Theo, owner of Theo's Auto Detailing in Mukilteo, Washington",
@@ -58,7 +52,7 @@ export const aboutValues = [
   {
     id: "local-service",
     title: "Local Service",
-    description: `Proudly serving ${businessConfig.location} and nearby areas.`,
+    description: `Based in ${businessConfig.location}.`,
     icon: "Home",
   },
 ] as const;

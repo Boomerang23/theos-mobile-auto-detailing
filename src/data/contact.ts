@@ -1,4 +1,3 @@
-import { businessConfig } from "@/data/business";
 import { services } from "@/data/services";
 
 export const contactCopy = {
@@ -12,12 +11,8 @@ export const contactCopy = {
 
 export const serviceAreaCopy = {
   title: "Service Area",
-  description: `Based in ${businessConfig.location}. Mobile detailing delivered to your home or workplace.`,
-  /**
-   * [PLACEHOLDER] Confirm exact coverage cities with the business owner.
-   */
-  coverageNote:
-    "[PLACEHOLDER] Nearby service areas to be confirmed — ask when booking if you are outside Mukilteo.",
+  description:
+    "Based in Mukilteo, Washington. Contact us to confirm availability in your area.",
 } as const;
 
 /** Vehicle types shown on the contact form */

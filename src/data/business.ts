@@ -14,9 +14,9 @@ export interface BusinessConfig {
   instagramHandle: string;
   socials: SocialLinks;
   /**
-   * [PLACEHOLDER] Confirm with the business owner before publishing as final hours.
+   * Confirmed business hours only. Leave empty until the owner provides hours.
    */
-  hoursPlaceholder: string;
+  hours: string;
 }
 
 export const businessConfig = {
@@ -31,6 +31,5 @@ export const businessConfig = {
     facebook: "#",
     instagram: "https://www.instagram.com/theosauto",
   },
-  hoursPlaceholder:
-    "[PLACEHOLDER] Business hours to be confirmed with Theo",
+  hours: "",
 } as const satisfies BusinessConfig;

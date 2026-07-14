@@ -23,7 +23,7 @@ export function ServicesSection() {
             </Heading>
             <Paragraph className="mt-16 max-w-2xl text-gray-dark">
               Professional mobile detailing for vehicles in{" "}
-              {businessConfig.location} — interior, exterior, and more.
+              {businessConfig.location}. Interior, exterior, and more.
             </Paragraph>
           </div>
           <CTAButton />

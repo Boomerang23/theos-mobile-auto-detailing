@@ -19,13 +19,7 @@ export function ServiceArea({
         <Paragraph className="text-gray-dark">
           {serviceAreaCopy.description}
         </Paragraph>
-        <Paragraph size="small" className="mt-16 text-gray-dark">
-          {serviceAreaCopy.coverageNote}
-        </Paragraph>
-        <Paragraph size="small" className="mt-24 font-medium text-primary">
-          {businessConfig.location}
-        </Paragraph>
-        <Paragraph size="small" className="mt-8 text-gray-dark">
+        <Paragraph size="small" className="mt-24 text-gray-dark">
           Follow {businessConfig.instagramHandle} ·{" "}
           <a
             href={businessConfig.socials.instagram}

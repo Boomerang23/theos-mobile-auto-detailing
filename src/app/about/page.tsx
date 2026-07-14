@@ -35,7 +35,7 @@ const valueIcons: Record<string, LucideIcon> = {
 
 export const metadata: Metadata = buildPageMetadata({
   title: "About Theo",
-  description: aboutCopy.intro.replace(/^\[PLACEHOLDER\]\s*/, ""),
+  description: aboutCopy.intro,
   path: "/about",
 });
 
@@ -69,16 +69,12 @@ export default function AboutPage() {
                 />
               ) : (
                 <div
-                  className="absolute inset-0 flex flex-col items-center justify-center gap-8 bg-gradient-to-br from-primary via-primary to-gray-dark px-32 text-center"
-                  aria-hidden
+                  className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-gray-dark"
+                  role="img"
+                  aria-label="Photo of Theo coming soon"
                 >
                   <div className="absolute inset-0 bg-dot-pattern opacity-[0.08]" />
-                  <p className="relative font-heading text-card-title font-semibold text-secondary">
-                    Theo
-                  </p>
-                  <p className="relative text-small text-secondary/70">
-                    [PLACEHOLDER] Photo of Theo coming soon
-                  </p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-accent/15 to-transparent" />
                 </div>
               )}
             </div>

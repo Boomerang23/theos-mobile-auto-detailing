@@ -44,18 +44,18 @@ export function Footer() {
               >
                 {contactEmail}
               </a>
-            ) : (
-              <p className="mt-8 text-small text-secondary/60">
-                [PLACEHOLDER] Email — set CONTACT_EMAIL
-              </p>
-            )}
+            ) : null}
 
-            <p className="mt-32 font-heading text-body font-semibold">
-              {footerCopy.businessHours}
-            </p>
-            <p className="mt-8 text-small text-secondary/60">
-              {businessConfig.hoursPlaceholder}
-            </p>
+            {businessConfig.hours ? (
+              <>
+                <p className="mt-32 font-heading text-body font-semibold">
+                  {footerCopy.businessHours}
+                </p>
+                <p className="mt-8 text-small text-secondary/80">
+                  {businessConfig.hours}
+                </p>
+              </>
+            ) : null}
           </div>
 
           <div>

@@ -43,7 +43,7 @@ export function Map({ className }: MapProps) {
         className,
       )}
       role="img"
-      aria-label="Map placeholder — Google Maps configuration pending"
+      aria-label="Map placeholder. Google Maps configuration pending"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-accent/30" />
       <div className="absolute inset-0 bg-dot-pattern opacity-[0.08]" />

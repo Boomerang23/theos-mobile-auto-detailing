@@ -33,8 +33,7 @@ export function TestimonialsSection() {
           </ul>
         ) : (
           <Paragraph size="small" className="mt-32 text-gray-dark">
-            [PLACEHOLDER] Customer reviews will appear here once verified
-            testimonials are added. Meanwhile, see recent work on{" "}
+            See recent work and updates on{" "}
             <a
               href={businessConfig.socials.instagram}
               target="_blank"

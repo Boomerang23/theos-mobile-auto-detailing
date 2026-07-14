@@ -26,18 +26,11 @@ export function AboutSection() {
             ) : (
               <div
                 className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-gray-dark"
-                aria-hidden
+                role="img"
+                aria-label="Photo of Theo coming soon"
               >
                 <div className="absolute inset-0 bg-dot-pattern opacity-[0.08]" />
-                <div className="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-8 px-32 text-center">
-                  <p className="font-heading text-card-title font-semibold text-secondary">
-                    Theo
-                  </p>
-                  <p className="text-small text-secondary/70">
-                    [PLACEHOLDER] Photo of Theo coming soon
-                  </p>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-accent/15 to-transparent" />
               </div>
             )}
           </div>

@@ -50,7 +50,7 @@ export const faqItems: FaqItem[] = [
     id: "detail-boats",
     question: "Do you detail boats?",
     answer:
-      "Yes. We offer Boat Detailing — professional cleaning and protection for your boat.",
+      "Yes. We offer Boat Detailing with professional cleaning and protection for your boat.",
   },
   {
     id: "detail-rvs",
