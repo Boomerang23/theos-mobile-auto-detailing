@@ -40,12 +40,12 @@ export const galleryItems: GalleryItem[] = [
     hasImages: false,
   },
   {
-    id: "full-detail",
-    title: "Full Detail",
+    id: "detail-packages",
+    title: "Detail Packages",
     beforeSrc: "/images/gallery/full-before.jpg",
     afterSrc: "/images/gallery/full-after.jpg",
-    beforeAlt: "Vehicle before a full interior and exterior detail",
-    afterAlt: "Vehicle after a full interior and exterior detail",
+    beforeAlt: "Vehicle before a detail package",
+    afterAlt: "Vehicle after a detail package",
     hasImages: false,
   },
   {

@@ -8,6 +8,23 @@ type ServicesGridProps = {
   className?: string;
 };
 
+function serviceHref(id: string): string {
+  switch (id) {
+    case "detail-packages":
+      return "/pricing";
+    case "engine-bay-cleaning":
+      return "/services#exterior";
+    case "mobile-detailing":
+      return "/contact";
+    case "interior-detailing":
+      return "/services#interior";
+    case "exterior-detailing":
+      return "/services#exterior";
+    default:
+      return `/services#${id}`;
+  }
+}
+
 export function ServicesGrid({
   services,
   linkToServicesPage = false,
@@ -24,7 +41,7 @@ export function ServicesGrid({
           title={service.title}
           description={service.description}
           icon={service.icon}
-          href={linkToServicesPage ? `/services#${service.id}` : undefined}
+          href={linkToServicesPage ? serviceHref(service.id) : undefined}
         />
       ))}
     </div>

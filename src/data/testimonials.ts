@@ -1,6 +1,6 @@
 export const testimonialsCopy = {
   title: "Trusted by Our Customers",
-  subtitle: "Follow Instagram for recent work and updates from Theo's Auto Detailing.",
+  subtitle: "Follow Instagram for recent work and updates from Theo's Mobile Auto Detailing.",
 } as const;
 
 export type Testimonial = {

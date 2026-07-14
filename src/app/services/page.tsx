@@ -27,7 +27,7 @@ const categoryIcons: Record<string, LucideIcon> = {
 export const metadata: Metadata = buildPageMetadata({
   title: "Services",
   description:
-    "Interior detailing, exterior detailing, full detail, engine bay cleaning, and mobile detailing in Mukilteo, WA.",
+    "Interior, exterior, RV, boat, commercial, and specialty mobile detailing services in Mukilteo, WA.",
   path: "/services",
 });
 
@@ -46,7 +46,7 @@ export default function ServicesPage() {
       />
       <PageHeader
         title="Services"
-        description="Interior detailing, exterior detailing, full detail, engine bay cleaning, and mobile detailing delivered to your location."
+        description="Choose individual services or ask about Basic, Deluxe, and Platinum detail packages."
       />
 
       <section className="py-section-mobile md:py-section-tablet lg:py-section-desktop">
@@ -66,7 +66,7 @@ export default function ServicesPage() {
               const Icon = categoryIcons[category.icon] ?? Sparkles;
 
               return (
-                <Card key={category.id}>
+                <Card key={category.id} id={category.id}>
                   <ServiceIcon icon={Icon} label={category.title} />
                   <Heading as={3} size="card" className="mt-24">
                     {category.title}
@@ -74,7 +74,9 @@ export default function ServicesPage() {
                   <ul className="mt-24 flex flex-col gap-12">
                     {category.services.map((item) => (
                       <ServiceFeature key={item.name}>
-                        {item.name}
+                        {item.requiresQuote
+                          ? `${item.name} (quote required)`
+                          : item.name}
                       </ServiceFeature>
                     ))}
                   </ul>

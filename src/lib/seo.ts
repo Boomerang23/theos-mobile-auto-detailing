@@ -3,8 +3,8 @@ import { businessConfig } from "@/data/business";
 
 export const siteConfig = {
   name: businessConfig.name,
-  shortName: "Theo's Auto Detailing",
-  title: "Theo's Auto Detailing | Mobile Detailing in Mukilteo, WA",
+  shortName: "Theo's Mobile Auto Detailing",
+  title: "Theo's Mobile Auto Detailing | Mukilteo, WA",
   description:
     "Professional mobile auto detailing in Mukilteo, Washington. Interior and exterior detailing delivered to your home or workplace. Book your detail today.",
   phone: businessConfig.phone,
@@ -15,7 +15,9 @@ export const siteConfig = {
     "car detailing Mukilteo WA",
     "interior detailing",
     "exterior detailing",
-    "full detail",
+    "basic detail",
+    "deluxe detail",
+    "platinum detail",
     "engine bay cleaning",
     "mobile detailing near me",
   ],

@@ -24,7 +24,7 @@ export const faqItems: FaqItem[] = [
     id: "come-to-home",
     question: "Do you come to my home?",
     answer:
-      "Yes. We come directly to you and bring premium cleaning and protection to your location.",
+      "Yes. We come directly to you and bring detailing service to your location.",
   },
   {
     id: "need-water",

@@ -10,7 +10,7 @@ export const aboutCopy = {
     "Every job is handled with care, clear communication, and a focus on lasting results.",
   tagline: businessConfig.tagline,
   photoSrc: "/images/about/theo.jpg",
-  photoAlt: "Theo, owner of Theo's Auto Detailing in Mukilteo, Washington",
+  photoAlt: "Theo, owner of Theo's Mobile Auto Detailing in Mukilteo, Washington",
   /** Set true when a real photo of Theo is added at photoSrc. */
   hasPhoto: false,
   valuesTitle: "Why Choose Theo",

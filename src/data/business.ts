@@ -20,7 +20,7 @@ export interface BusinessConfig {
 }
 
 export const businessConfig = {
-  name: "Theo\u2019s Auto Detailing",
+  name: "Theo\u2019s Mobile Auto Detailing",
   phone: "425-409-7198",
   phoneFormatted: "(425) 409-7198",
   tagline: "We Bring the Shine to You!",
