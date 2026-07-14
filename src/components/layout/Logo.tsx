@@ -13,8 +13,8 @@ type LogoProps = {
 };
 
 const sizeMap = {
-  sm: { className: "h-48 w-48", px: 48 },
-  md: { className: "h-56 w-56", px: 56 },
+  sm: { className: "h-[36px] w-[36px]", px: 36 },
+  md: { className: "h-[40px] w-[40px]", px: 40 },
 } as const;
 
 export function Logo({
@@ -41,7 +41,7 @@ export function Logo({
         height={dimensions.px}
         className={cn(dimensions.className, "object-contain")}
         priority
-        sizes="56px"
+        sizes="40px"
       />
     </Link>
   );
