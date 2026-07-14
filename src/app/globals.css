@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #111111;
+  --color-secondary: #ffffff;
+  --color-accent: #d4af37;
+  --color-success: #15803d;
+  --color-error: #b91c1c;
+  --color-gray-light: #f5f5f5;
+  --color-gray-dark: #4b5563;
+
+  --container-max-width: 1280px;
+  --container-padding-mobile: 20px;
+  --container-padding-tablet: 24px;
+  --container-padding-desktop: 32px;
+
+  --section-padding-mobile: 60px;
+  --section-padding-tablet: 80px;
+  --section-padding-desktop: 120px;
+
+  --radius-card: 20px;
+  --radius-button: 14px;
+  --radius-image: 24px;
+  --radius-input: 14px;
+
+  --shadow-soft:
+    0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+  --shadow-soft-hover:
+    0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+
+  --duration-default: 300ms;
+  --duration-animation: 400ms;
+  --easing-default: ease-out;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-secondary font-body text-body text-primary antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  #main-content:focus {
+    outline: none;
+  }
+
+  /* Dark surfaces need a light focus ring for 3:1 non-text contrast */
+  .focus-ring-on-dark:focus-visible {
+    outline-color: var(--color-secondary);
+  }
+}
+
+@layer utilities {
+  .bg-dot-pattern {
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      var(--color-primary) 1px,
+      transparent 0
+    );
+    background-size: 24px 24px;
+  }
+
+  .content-visibility-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 36rem;
+  }
+}
