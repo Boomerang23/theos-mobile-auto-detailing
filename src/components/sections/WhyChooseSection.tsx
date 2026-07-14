@@ -39,7 +39,7 @@ export function WhyChooseSection() {
 
             return (
               <li key={value.id}>
-                <Card className="h-full border border-secondary/10 bg-primary shadow-none hover:translate-y-0 hover:shadow-none">
+                <Card className="h-full border-secondary/10 bg-primary shadow-none hover:translate-y-0 hover:border-accent/30 hover:shadow-none motion-reduce:hover:border-secondary/10">
                   <IconBox
                     icon={Icon}
                     label={value.title}
@@ -48,7 +48,7 @@ export function WhyChooseSection() {
                   <Heading as={3} size="card" className="mt-24 text-secondary">
                     {value.title}
                   </Heading>
-                  <Paragraph size="small" className="mt-16 text-secondary/75">
+                  <Paragraph size="small" className="mt-8 text-secondary/75">
                     {value.description}
                   </Paragraph>
                 </Card>

@@ -132,7 +132,7 @@ export default function AboutPage() {
                     <Heading as={3} size="card" className="mt-24">
                       {value.title}
                     </Heading>
-                    <Paragraph size="small" className="mt-16 text-gray-dark">
+                    <Paragraph size="small" className="mt-8 text-gray-dark">
                       {value.description}
                     </Paragraph>
                   </Card>

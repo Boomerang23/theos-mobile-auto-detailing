@@ -28,8 +28,9 @@ export function Textarea({
         id={textareaId}
         rows={rows}
         className={cn(
-          "w-full rounded-input border border-gray-dark/20 bg-secondary px-16 py-16 text-body text-primary transition duration-DEFAULT placeholder:text-gray-dark/60",
-          error && "border-error",
+          "field-control w-full rounded-input px-16 py-16",
+          error &&
+            "border-error hover:border-error focus-visible:border-error",
           className,
         )}
         aria-invalid={Boolean(error)}

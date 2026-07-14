@@ -37,18 +37,18 @@ export function ContactSection() {
           <Paragraph className="mt-16 text-secondary/80">
             {contactCopy.subtitle}
           </Paragraph>
-          <div className="mt-24 flex flex-col gap-16 sm:flex-row sm:items-center">
+          <div className="mt-24 flex w-full flex-col gap-16 sm:w-auto sm:flex-row sm:items-center">
             <a
               href={`tel:${businessConfig.phone}`}
-              className="inline-flex h-button items-center justify-center rounded-button border border-secondary px-32 text-button font-medium text-secondary transition duration-DEFAULT hover:bg-secondary hover:text-primary focus-ring-on-dark"
+              className="btn-interactive inline-flex h-button w-full items-center justify-center rounded-button border border-secondary px-32 text-button font-medium text-secondary hover:bg-secondary hover:text-primary focus-ring-on-dark sm:w-auto"
             >
               {ctaCopy.callNow}: {businessConfig.phoneFormatted}
             </a>
-            <CTAButton className="focus-ring-on-dark" />
+            <CTAButton className="w-full focus-ring-on-dark focus-ring-on-accent sm:w-auto" />
           </div>
         </div>
 
-        <div className="rounded-card bg-secondary p-card text-primary shadow-soft">
+        <div className="rounded-card bg-secondary p-24 text-primary shadow-soft sm:p-card">
           <ContactForm />
         </div>
       </AnimatedSection>

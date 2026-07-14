@@ -13,7 +13,7 @@ export function CTAButton({ className, onNavigate }: CTAButtonProps) {
       href="/contact"
       onClick={onNavigate}
       className={cn(
-        "inline-flex h-button items-center justify-center rounded-button bg-accent px-32 text-button font-medium text-primary transition duration-DEFAULT ease-DEFAULT hover:scale-[1.02] hover:brightness-95",
+        "btn-interactive inline-flex h-button items-center justify-center rounded-button bg-accent px-32 text-button font-medium text-primary hover:scale-[1.02] hover:brightness-95 focus-ring-on-accent motion-reduce:hover:scale-100",
         className,
       )}
     >

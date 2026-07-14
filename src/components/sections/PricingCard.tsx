@@ -44,7 +44,7 @@ export function PricingCard({
         {pkg.name}
       </Heading>
 
-      <Paragraph size="small" className="mt-16 text-gray-dark">
+      <Paragraph size="small" className="mt-8 text-gray-dark">
         {pkg.description}
       </Paragraph>
 

@@ -43,12 +43,12 @@ export default function GalleryPage() {
               href={businessConfig.socials.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-button items-center justify-center gap-12 rounded-button border border-primary px-32 text-button font-medium text-primary transition duration-DEFAULT hover:bg-primary hover:text-secondary"
+              className="btn-interactive inline-flex h-button items-center justify-center gap-12 rounded-button border border-primary px-32 text-button font-medium text-primary hover:bg-primary hover:text-secondary"
             >
               <Instagram className="h-20 w-20" strokeWidth={1.5} aria-hidden />
               {galleryCopy.instagramCta}
             </a>
-            <CTAButton />
+            <CTAButton className="w-full sm:w-auto" />
           </div>
         </AnimatedSection>
       </Section>

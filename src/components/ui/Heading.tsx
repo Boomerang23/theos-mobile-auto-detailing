@@ -10,9 +10,10 @@ type HeadingProps = HTMLAttributes<HTMLHeadingElement> & {
 };
 
 const sizeClasses = {
-  hero: "text-hero-mobile md:text-hero-tablet lg:text-hero-desktop",
-  section: "text-section-title",
-  card: "text-card-title",
+  hero: "text-hero-mobile tracking-tight md:text-hero-tablet lg:text-hero-desktop",
+  section:
+    "text-[32px] font-bold leading-[1.2] tracking-tight md:text-section-title",
+  card: "text-card-title tracking-tight",
 };
 
 export function Heading({

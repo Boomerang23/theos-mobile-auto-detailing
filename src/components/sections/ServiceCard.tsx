@@ -29,11 +29,11 @@ export function ServiceCard({
       <Heading as={3} size="card" className="mt-24">
         {title}
       </Heading>
-      <Paragraph size="small" className="mt-8 text-gray-dark">
+      <Paragraph size="small" className="mt-8 flex-1 text-gray-dark">
         {description}
       </Paragraph>
       {href ? (
-        <span className="mt-24 inline-block text-small font-medium text-accent">
+        <span className="mt-24 inline-flex items-center text-small font-medium text-accent transition duration-DEFAULT group-hover:underline group-hover:underline-offset-4">
           Learn more
         </span>
       ) : null}
@@ -44,9 +44,12 @@ export function ServiceCard({
     return (
       <Link
         href={href}
-        className={cn("block h-full focus-visible:rounded-card", className)}
+        className={cn(
+          "group block h-full rounded-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
+          className,
+        )}
       >
-        <Card id={id} className="h-full">
+        <Card id={id} className="flex h-full flex-col">
           {content}
         </Card>
       </Link>
@@ -54,7 +57,7 @@ export function ServiceCard({
   }
 
   return (
-    <Card id={id} className={cn("h-full", className)}>
+    <Card id={id} className={cn("flex h-full flex-col", className)}>
       {content}
     </Card>
   );

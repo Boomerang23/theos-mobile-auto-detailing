@@ -12,7 +12,7 @@ export function GallerySection() {
   return (
     <Section id="gallery" ariaLabelledby="gallery-heading" deferPaint>
       <AnimatedSection>
-        <div className="mb-16 flex flex-col gap-24 sm:flex-row sm:items-end sm:justify-between">
+        <div className="mb-48 flex flex-col gap-24 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <Heading as={2} id="gallery-heading">
               {galleryCopy.title}
@@ -23,7 +23,7 @@ export function GallerySection() {
           </div>
           <Link
             href="/gallery"
-            className="inline-flex h-button items-center justify-center rounded-button border border-primary px-32 text-button font-medium text-primary transition duration-DEFAULT hover:bg-primary hover:text-secondary"
+            className="btn-interactive inline-flex h-button shrink-0 items-center justify-center rounded-button border border-primary px-32 text-button font-medium text-primary hover:bg-primary hover:text-secondary"
           >
             {galleryCopy.galleryLink}
           </Link>
@@ -36,7 +36,7 @@ export function GallerySection() {
             href={businessConfig.socials.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-button items-center justify-center gap-12 rounded-button bg-accent px-32 text-button font-medium text-primary transition duration-DEFAULT hover:scale-[1.02] hover:brightness-95"
+            className="btn-interactive inline-flex h-button items-center justify-center gap-12 rounded-button bg-accent px-32 text-button font-medium text-primary hover:scale-[1.02] hover:brightness-95 focus-ring-on-accent motion-reduce:hover:scale-100"
           >
             <Instagram className="h-20 w-20" strokeWidth={1.5} aria-hidden />
             {galleryCopy.instagramCta}

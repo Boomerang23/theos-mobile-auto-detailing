@@ -11,7 +11,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-accent text-primary hover:brightness-95 hover:scale-[1.02]",
+    "bg-accent text-primary hover:brightness-95 hover:scale-[1.02] focus-ring-on-accent",
   secondary:
     "border border-secondary bg-transparent text-secondary hover:bg-secondary hover:text-primary focus-ring-on-dark",
 };
@@ -27,7 +27,7 @@ export function Button({
     <button
       type={type}
       className={cn(
-        "inline-flex h-button items-center justify-center rounded-button px-32 text-button font-medium transition duration-DEFAULT ease-DEFAULT disabled:pointer-events-none disabled:opacity-50",
+        "btn-interactive inline-flex h-button items-center justify-center rounded-button px-32 text-button font-medium disabled:pointer-events-none disabled:opacity-50 motion-reduce:hover:scale-100",
         variantClasses[variant],
         className,
       )}

@@ -13,7 +13,7 @@ export function IconBox({ icon: Icon, label, className }: IconBoxProps) {
       role="img"
       aria-label={label}
       className={cn(
-        "inline-flex h-64 w-64 items-center justify-center rounded-card bg-gray-light text-primary",
+        "inline-flex h-64 w-64 shrink-0 items-center justify-center rounded-card bg-gray-light text-primary",
         className,
       )}
     >

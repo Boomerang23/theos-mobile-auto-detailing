@@ -72,6 +72,53 @@
   .focus-ring-on-dark:focus-visible {
     outline-color: var(--color-secondary);
   }
+
+  /* Accent / gold surfaces: dark ring for stronger focus visibility */
+  .focus-ring-on-accent:focus-visible {
+    outline-color: var(--color-primary);
+  }
+}
+
+@layer components {
+  .field-control {
+    border: 1px solid color-mix(in srgb, var(--color-gray-dark) 20%, transparent);
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    transition:
+      border-color var(--duration-default) var(--easing-default),
+      box-shadow var(--duration-default) var(--easing-default);
+  }
+
+  .field-control::placeholder {
+    color: color-mix(in srgb, var(--color-gray-dark) 60%, transparent);
+  }
+
+  .field-control:hover {
+    border-color: color-mix(in srgb, var(--color-gray-dark) 35%, transparent);
+  }
+
+  .field-control:focus,
+  .field-control:focus-visible {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 15%, transparent);
+  }
+
+  .btn-interactive {
+    transition:
+      transform var(--duration-default) var(--easing-default),
+      filter var(--duration-default) var(--easing-default),
+      background-color var(--duration-default) var(--easing-default),
+      color var(--duration-default) var(--easing-default),
+      border-color var(--duration-default) var(--easing-default);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .btn-interactive {
+      transition: none;
+      transform: none !important;
+    }
+  }
 }
 
 @layer utilities {

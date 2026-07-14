@@ -22,7 +22,7 @@ export function PageHeader({ title, description, className }: PageHeaderProps) {
           {title}
         </Heading>
         {description ? (
-          <Paragraph className="mt-16 max-w-3xl text-gray-dark">
+          <Paragraph className="mt-16 max-w-3xl text-balance text-gray-dark">
             {description}
           </Paragraph>
         ) : null}

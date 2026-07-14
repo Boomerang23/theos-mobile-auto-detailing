@@ -40,8 +40,9 @@ export function Select({
         id={selectId}
         required={required}
         className={cn(
-          "h-button w-full rounded-input border border-gray-dark/20 bg-secondary px-16 text-body text-primary transition duration-DEFAULT",
-          error && "border-error",
+          "field-control h-button w-full rounded-input px-16",
+          error &&
+            "border-error hover:border-error focus-visible:border-error",
           className,
         )}
         aria-invalid={Boolean(error)}

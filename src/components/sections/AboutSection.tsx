@@ -36,7 +36,7 @@ export function AboutSection() {
           </div>
 
           <div>
-            <p className="mb-16 font-heading text-small font-semibold tracking-wide text-accent">
+            <p className="mb-16 font-heading text-small font-semibold tracking-[0.04em] text-accent">
               {businessConfig.location}
             </p>
             <Heading as={2} id="about-intro-heading">
@@ -50,10 +50,10 @@ export function AboutSection() {
             </Paragraph>
 
             <div className="mt-32 flex flex-col gap-16 sm:flex-row sm:items-center">
-              <CTAButton />
+              <CTAButton className="w-full sm:w-auto" />
               <a
                 href={`tel:${businessConfig.phone}`}
-                className="inline-flex h-button items-center justify-center rounded-button border border-primary px-32 text-button font-medium text-primary transition duration-DEFAULT hover:bg-primary hover:text-secondary"
+                className="btn-interactive inline-flex h-button w-full items-center justify-center rounded-button border border-primary px-32 text-button font-medium text-primary hover:bg-primary hover:text-secondary sm:w-auto"
               >
                 {ctaCopy.callNow}
               </a>

@@ -139,7 +139,7 @@ export function MobileNav({
             <CTAButton onNavigate={close} className="w-full" />
             <a
               href={`tel:${businessConfig.phone}`}
-              className="inline-flex h-button w-full items-center justify-center rounded-button border border-primary bg-transparent text-button font-medium text-primary transition duration-DEFAULT hover:bg-primary hover:text-secondary"
+              className="btn-interactive inline-flex h-button w-full items-center justify-center rounded-button border border-primary bg-transparent text-button font-medium text-primary hover:bg-primary hover:text-secondary"
               onClick={close}
             >
               {ctaCopy.callNow}

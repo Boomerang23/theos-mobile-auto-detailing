@@ -29,7 +29,7 @@ export function NavLink({
       onClick={onNavigate}
       aria-current={isActive ? "page" : undefined}
       className={cn(
-        "text-small font-medium transition duration-DEFAULT ease-DEFAULT",
+        "inline-flex min-h-[44px] items-center text-small font-medium transition duration-DEFAULT ease-DEFAULT",
         overlay && "focus-ring-on-dark",
         isActive
           ? overlay

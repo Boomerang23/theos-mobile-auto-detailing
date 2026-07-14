@@ -31,8 +31,9 @@ export function Input({
         id={inputId}
         required={required}
         className={cn(
-          "h-button w-full rounded-input border border-gray-dark/20 bg-secondary px-16 text-body text-primary transition duration-DEFAULT placeholder:text-gray-dark/60",
-          error && "border-error",
+          "field-control h-button w-full rounded-input px-16",
+          error &&
+            "border-error hover:border-error focus-visible:border-error [&]:shadow-[0_0_0_3px_color-mix(in_srgb,var(--color-error)_20%,transparent)]",
           className,
         )}
         aria-invalid={Boolean(error)}
