@@ -6,7 +6,7 @@ import { footerCopy, footerNavLinks } from "@/data/navigation";
 
 export function Footer() {
   const year = new Date().getFullYear();
-  const contactEmail = process.env.CONTACT_EMAIL;
+  const contactEmail = process.env.CONTACT_EMAIL?.trim() || businessConfig.email;
 
   return (
     <footer className="bg-primary text-secondary">

@@ -8,7 +8,7 @@ export type LegalSection = {
 };
 
 const contactEmail =
-  process.env.CONTACT_EMAIL?.trim() || "the contact form on this website";
+  process.env.CONTACT_EMAIL?.trim() || businessConfig.email;
 
 export const privacyCopy = {
   title: "Privacy Policy",

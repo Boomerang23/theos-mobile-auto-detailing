@@ -11,7 +11,7 @@ type ContactCardProps = {
 };
 
 export function ContactCard({ className }: ContactCardProps) {
-  const contactEmail = process.env.CONTACT_EMAIL;
+  const contactEmail = process.env.CONTACT_EMAIL?.trim() || businessConfig.email;
   const businessAddress = process.env.BUSINESS_ADDRESS;
 
   return (
