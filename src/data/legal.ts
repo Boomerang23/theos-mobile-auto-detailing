@@ -7,8 +7,7 @@ export type LegalSection = {
   bullets?: string[];
 };
 
-const contactEmail =
-  process.env.CONTACT_EMAIL?.trim() || businessConfig.email;
+const contactEmail = businessConfig.email;
 
 export const privacyCopy = {
   title: "Privacy Policy",

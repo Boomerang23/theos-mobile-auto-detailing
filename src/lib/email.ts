@@ -13,12 +13,7 @@ function getResendClient() {
 }
 
 function getBusinessEmail() {
-  const email =
-    process.env.CONTACT_EMAIL?.trim() || businessConfig.email.trim();
-  if (!email) {
-    throw new Error("CONTACT_EMAIL is not configured");
-  }
-  return email;
+  return businessConfig.email;
 }
 
 function getFromAddress() {

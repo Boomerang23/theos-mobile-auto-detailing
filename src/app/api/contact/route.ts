@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { businessConfig } from "@/data/business";
 import { contactCopy } from "@/data/contact";
 import { contactFormSchema, contactRequestSchema } from "@/lib/contact-schema";
 import { sendContactEmails } from "@/lib/email";
@@ -51,9 +50,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const hasEmailBackend =
-    Boolean(process.env.RESEND_API_KEY) &&
-    Boolean(process.env.CONTACT_EMAIL?.trim() || businessConfig.email);
+  const hasEmailBackend = Boolean(process.env.RESEND_API_KEY);
 
   if (!hasEmailBackend) {
     return NextResponse.json(
