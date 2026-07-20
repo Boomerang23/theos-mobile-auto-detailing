@@ -18,7 +18,7 @@ export function HeroContent({ className }: HeroContentProps) {
       <Heading as={1} size="hero" id="hero-heading" className="text-secondary">
         {heroCopy.headline}
       </Heading>
-      <Paragraph className="mt-24 max-w-2xl text-secondary/90">
+      <Paragraph className="mt-24 max-w-2xl text-secondary drop-shadow-sm">
         {heroCopy.subheadline}
       </Paragraph>
       <HeroButtons className="mt-32" />
