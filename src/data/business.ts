@@ -1,5 +1,4 @@
 export interface SocialLinks {
-  facebook: string;
   instagram: string;
 }
 
@@ -30,7 +29,6 @@ export const businessConfig = {
   locationShort: "Mukilteo, WA",
   instagramHandle: "@theosauto",
   socials: {
-    facebook: "#",
     instagram: "https://www.instagram.com/theosauto",
   },
   hours: "",

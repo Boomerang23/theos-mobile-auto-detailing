@@ -10,9 +10,10 @@ export const aboutCopy = {
     "Every job is handled with care, clear communication, and a focus on lasting results.",
   tagline: businessConfig.tagline,
   photoSrc: "/images/about/theo.jpg",
-  photoAlt: "Theo, owner of Theo's Mobile Auto Detailing in Mukilteo, Washington",
+  photoAlt:
+    "Theo polishing a silver car with a buffer during a mobile detailing appointment",
   /** Set true when a real photo of Theo is added at photoSrc. */
-  hasPhoto: false,
+  hasPhoto: true,
   valuesTitle: "Why Choose Theo",
   valuesDescription:
     "Straightforward mobile detailing focused on quality results and reliable local service.",

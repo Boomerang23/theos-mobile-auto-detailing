@@ -89,8 +89,8 @@ export const galleryItems: GalleryItem[] = [
     title: "Mobile Service",
     beforeSrc: "/images/gallery/mobile-before.jpg",
     afterSrc: "/images/gallery/mobile-after.jpg",
-    beforeAlt: "Vehicle at a customer location before mobile detailing",
-    afterAlt: "Finished vehicle after mobile detailing on site",
+    beforeAlt: "Vehicle with dirty wheels at a customer driveway before mobile detailing",
+    afterAlt: "Glossy finished vehicle after mobile detailing at the customer location",
     hasImages: true,
   },
 ];

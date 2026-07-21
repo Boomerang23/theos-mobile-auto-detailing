@@ -19,7 +19,7 @@ export function AboutSection() {
                 src={aboutCopy.photoSrc}
                 alt={aboutCopy.photoAlt}
                 fill
-                className="object-cover"
+                className="object-cover object-[center_25%]"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 quality={80}
               />

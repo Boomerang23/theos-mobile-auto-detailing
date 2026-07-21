@@ -26,10 +26,9 @@ export function organizationSchema(): JsonLd {
     image: absoluteUrl(siteConfig.logoPath),
     telephone: businessConfig.phone,
     address: businessAddress(),
-    sameAs: [
-      businessConfig.socials.facebook,
-      businessConfig.socials.instagram,
-    ].filter((url) => url && url !== "#"),
+    sameAs: [businessConfig.socials.instagram].filter(
+      (url) => url && url !== "#",
+    ),
   };
 }
 
