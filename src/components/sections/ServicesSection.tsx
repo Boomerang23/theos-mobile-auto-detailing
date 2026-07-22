@@ -22,8 +22,9 @@ export function ServicesSection() {
               Services
             </Heading>
             <Paragraph className="mt-16 max-w-2xl text-gray-dark">
-              Professional mobile detailing for vehicles in{" "}
-              {businessConfig.location}. Interior, exterior, and more.
+              Professional mobile detailing across Snohomish County and King
+              County, based in {businessConfig.location}. Interior, exterior,
+              and more.
             </Paragraph>
           </div>
           <CTAButton />

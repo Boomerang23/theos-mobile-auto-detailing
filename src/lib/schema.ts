@@ -41,6 +41,11 @@ export function websiteSchema(): JsonLd {
   };
 }
 
+const washingtonCountiesServed = [
+  { "@type": "AdministrativeArea", name: "Snohomish County" },
+  { "@type": "AdministrativeArea", name: "King County" },
+] as const;
+
 export function localBusinessSchema(): JsonLd {
   return {
     "@type": "LocalBusiness",
@@ -53,14 +58,20 @@ export function localBusinessSchema(): JsonLd {
     logo: absoluteUrl(siteConfig.logoPath),
     priceRange: "$$",
     address: businessAddress(),
-    areaServed: {
-      "@type": "City",
-      name: "Mukilteo",
-      containedInPlace: {
-        "@type": "State",
-        name: "Washington",
-      },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ],
+      opens: "07:00",
+      closes: "17:00",
     },
+    areaServed: washingtonCountiesServed,
     parentOrganization: { "@id": `${getSiteUrl()}/#organization` },
   };
 }
@@ -73,10 +84,7 @@ export function serviceSchemas(): JsonLd[] {
     description: service.description,
     provider: { "@id": `${getSiteUrl()}/#localbusiness` },
     url: absoluteUrl("/services"),
-    areaServed: {
-      "@type": "City",
-      name: "Mukilteo",
-    },
+    areaServed: [...washingtonCountiesServed],
   }));
 }
 
@@ -113,6 +121,7 @@ export function breadcrumbSchema(
 }
 
 export function homeGraphSchema(): JsonLd {
+  const faq = faqPageSchema();
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -120,6 +129,7 @@ export function homeGraphSchema(): JsonLd {
       websiteSchema(),
       localBusinessSchema(),
       ...serviceSchemas(),
+      ...(faq ? [faq] : []),
     ],
   };
 }

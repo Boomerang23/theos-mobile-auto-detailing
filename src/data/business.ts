@@ -13,14 +13,11 @@ export interface BusinessConfig {
   /** Instagram profile handle for display only */
   instagramHandle: string;
   socials: SocialLinks;
-  /**
-   * Confirmed business hours only. Leave empty until the owner provides hours.
-   */
   hours: string;
 }
 
 export const businessConfig = {
-  name: "Theo\u2019s Mobile Auto Detailing",
+  name: "Theo\u2019s Detailing Service LLC",
   phone: "425-409-7198",
   phoneFormatted: "(425) 409-7198",
   email: "theosadetailing@gmail.com",
@@ -31,5 +28,5 @@ export const businessConfig = {
   socials: {
     instagram: "https://www.instagram.com/theosauto",
   },
-  hours: "",
+  hours: "Mon\u2013Sat 7:00 AM \u2013 5:00 PM",
 } as const satisfies BusinessConfig;

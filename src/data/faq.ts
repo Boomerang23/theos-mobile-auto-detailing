@@ -5,14 +5,10 @@ export const faqCopy = {
 export type FaqItem = {
   id: string;
   question: string;
-  /** Leave empty until final answers are provided in CONTENT_PLAN / CONTENT_COPY */
   answer: string;
 };
 
-/**
- * FAQ topic inventory from CONTENT_PLAN.md.
- * Answers filled only where already documented elsewhere in the SSOT.
- */
+/** FAQ topic inventory from CONTENT_PLAN.md. */
 export const faqItems: FaqItem[] = [
   {
     id: "how-long",
@@ -29,22 +25,25 @@ export const faqItems: FaqItem[] = [
   {
     id: "need-water",
     question: "Do I need water?",
-    answer: "",
+    answer:
+      "Yes. When permitted and available at your location, we use your water for service.",
   },
   {
     id: "need-electricity",
     question: "Do I need electricity?",
-    answer: "",
+    answer:
+      "Yes. When permitted and available at your location, we use your electricity for service.",
   },
   {
     id: "payment-methods",
     question: "What payment methods do you accept?",
-    answer: "",
+    answer:
+      "We accept Zelle and credit cards. Cash is accepted as an exception.",
   },
   {
     id: "how-often",
     question: "How often should I detail my vehicle?",
-    answer: "",
+    answer: "We recommend detailing your vehicle monthly.",
   },
   {
     id: "detail-boats",

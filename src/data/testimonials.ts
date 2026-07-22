@@ -1,6 +1,8 @@
+import { businessConfig } from "@/data/business";
+
 export const testimonialsCopy = {
   title: "Trusted by Our Customers",
-  subtitle: "Follow Instagram for recent work and updates from Theo's Mobile Auto Detailing.",
+  subtitle: `Follow Instagram for recent work and updates from ${businessConfig.name}.`,
 } as const;
 
 export type Testimonial = {

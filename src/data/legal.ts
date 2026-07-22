@@ -12,7 +12,7 @@ const contactEmail = businessConfig.email;
 export const privacyCopy = {
   title: "Privacy Policy",
   description:
-    "How Theo's Mobile Auto Detailing collects, uses, and protects your information.",
+    `How ${businessConfig.name} collects, uses, and protects your information.`,
   lastUpdated: "July 13, 2026",
   sections: [
     {
@@ -156,7 +156,7 @@ export const termsCopy = {
       id: "payments",
       title: "Payments",
       paragraphs: [
-        "Accepted payment methods and any deposits will be confirmed when your appointment is scheduled. Payment is due as agreed at the time of booking or completion of service unless otherwise arranged in writing.",
+        "We accept Zelle and credit cards. Cash is accepted as an exception. Any deposits will be confirmed when your appointment is scheduled. Payment is due as agreed at the time of booking or completion of service unless otherwise arranged in writing.",
       ],
     },
     {

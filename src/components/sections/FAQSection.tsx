@@ -10,12 +10,7 @@ export function FAQSection() {
   const answeredItems = faqItems.filter((item) => item.answer.trim().length > 0);
 
   return (
-    <Section
-      id="faq"
-      ariaLabelledby="faq-heading"
-      className="bg-gray-light"
-      deferPaint
-    >
+    <Section id="faq" ariaLabelledby="faq-heading" deferPaint>
       <AnimatedSection>
         <Heading as={2} id="faq-heading">
           {faqCopy.title}

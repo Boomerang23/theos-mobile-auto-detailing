@@ -12,7 +12,7 @@ export const contactCopy = {
 export const serviceAreaCopy = {
   title: "Service Area",
   description:
-    "Based in Mukilteo, Washington. Contact us to confirm availability in your area.",
+    "Based in Mukilteo, Washington. We serve cities throughout Snohomish County and King County. Contact us to confirm availability at your location.",
 } as const;
 
 /** Vehicle types shown on the contact form */
