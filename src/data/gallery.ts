@@ -22,6 +22,15 @@ export type GalleryItem = {
  */
 export const galleryItems: GalleryItem[] = [
   {
+    id: "headlights-restoration",
+    title: "Headlights Restoration",
+    beforeSrc: "/images/gallery/headlights-before.jpg",
+    afterSrc: "/images/gallery/headlights-after.jpg",
+    beforeAlt: "Oxidized cloudy headlight lens before restoration",
+    afterAlt: "Clear restored headlight lens after professional restoration",
+    hasImages: true,
+  },
+  {
     id: "interior-detailing",
     title: "Interior Detailing",
     beforeSrc: "/images/gallery/interior-before.jpg",
