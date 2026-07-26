@@ -18,7 +18,7 @@ export type GalleryItem = {
 
 /**
  * Gallery inventory for homepage preview and `/gallery`.
- * Photos supplied by the business owner (WhatsApp set, Jul 2026).
+ * Set hasImages to true when new photography is added at the reserved paths.
  */
 export const galleryItems: GalleryItem[] = [
   {
@@ -28,7 +28,7 @@ export const galleryItems: GalleryItem[] = [
     afterSrc: "/images/gallery/interior-after.jpg",
     beforeAlt: "Stained seats and dirty floor mats before interior detailing",
     afterAlt: "Clean captain seats and floor mats after interior detailing",
-    hasImages: true,
+    hasImages: false,
   },
   {
     id: "exterior-detailing",
@@ -37,7 +37,7 @@ export const galleryItems: GalleryItem[] = [
     afterSrc: "/images/gallery/exterior-after.jpg",
     beforeAlt: "Vehicle exterior with road film and scuffs before detailing",
     afterAlt: "Glossy polished exterior after professional detailing",
-    hasImages: true,
+    hasImages: false,
   },
   {
     id: "detail-packages",
@@ -46,7 +46,7 @@ export const galleryItems: GalleryItem[] = [
     afterSrc: "/images/gallery/full-after.jpg",
     beforeAlt: "SUV before a full mobile detail package",
     afterAlt: "SUV after a completed mobile detail package",
-    hasImages: true,
+    hasImages: false,
   },
   {
     id: "engine-bay",
@@ -55,7 +55,7 @@ export const galleryItems: GalleryItem[] = [
     afterSrc: "/images/gallery/engine-after.jpg",
     beforeAlt: "Engine bay during detailing",
     afterAlt: "Clean engine bay after professional cleaning",
-    hasImages: true,
+    hasImages: false,
   },
   {
     id: "wheels-tires",
@@ -64,7 +64,7 @@ export const galleryItems: GalleryItem[] = [
     afterSrc: "/images/gallery/wheels-after.jpg",
     beforeAlt: "Wheels and lower panels before deep cleaning",
     afterAlt: "Clean alloy wheels after detailing",
-    hasImages: true,
+    hasImages: false,
   },
   {
     id: "dashboard",
@@ -73,7 +73,7 @@ export const galleryItems: GalleryItem[] = [
     afterSrc: "/images/gallery/dashboard-after.jpg",
     beforeAlt: "Dusty dashboard and gauges before interior cleaning",
     afterAlt: "Clean dashboard and gauges after interior detailing",
-    hasImages: true,
+    hasImages: false,
   },
   {
     id: "paint-care",
@@ -82,7 +82,7 @@ export const galleryItems: GalleryItem[] = [
     afterSrc: "/images/gallery/paint-after.jpg",
     beforeAlt: "Paint surface before wash and protection",
     afterAlt: "Glossy paint after wash and protection",
-    hasImages: true,
+    hasImages: false,
   },
   {
     id: "mobile-service",
@@ -91,7 +91,7 @@ export const galleryItems: GalleryItem[] = [
     afterSrc: "/images/gallery/mobile-after.jpg",
     beforeAlt: "Vehicle with dirty wheels at a customer driveway before mobile detailing",
     afterAlt: "Glossy finished vehicle after mobile detailing at the customer location",
-    hasImages: true,
+    hasImages: false,
   },
 ];
 
