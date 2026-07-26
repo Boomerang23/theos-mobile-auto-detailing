@@ -18,7 +18,7 @@ export type GalleryItem = {
 
 /**
  * Gallery inventory for homepage preview and `/gallery`.
- * Set hasImages to true when new photography is added at the reserved paths.
+ * Only complete before/after pairs are listed.
  */
 export const galleryItems: GalleryItem[] = [
   {
@@ -26,72 +26,27 @@ export const galleryItems: GalleryItem[] = [
     title: "Interior Detailing",
     beforeSrc: "/images/gallery/interior-before.jpg",
     afterSrc: "/images/gallery/interior-after.jpg",
-    beforeAlt: "Stained seats and dirty floor mats before interior detailing",
-    afterAlt: "Clean captain seats and floor mats after interior detailing",
-    hasImages: false,
+    beforeAlt: "Dirty rear seats and floor mats covered in crumbs and mud before interior detailing",
+    afterAlt: "Clean black leather rear seats and vacuumed carpet after interior detailing",
+    hasImages: true,
   },
   {
-    id: "exterior-detailing",
-    title: "Exterior Detailing",
-    beforeSrc: "/images/gallery/exterior-before.jpg",
-    afterSrc: "/images/gallery/exterior-after.jpg",
-    beforeAlt: "Vehicle exterior with road film and scuffs before detailing",
-    afterAlt: "Glossy polished exterior after professional detailing",
-    hasImages: false,
+    id: "trunk-detailing",
+    title: "Trunk Detailing",
+    beforeSrc: "/images/gallery/trunk-before.jpg",
+    afterSrc: "/images/gallery/trunk-after.jpg",
+    beforeAlt: "Dusty Subaru cargo mat with debris before trunk detailing",
+    afterAlt: "Clean carpeted trunk floor after professional trunk detailing",
+    hasImages: true,
   },
   {
-    id: "detail-packages",
-    title: "Detail Packages",
-    beforeSrc: "/images/gallery/full-before.jpg",
-    afterSrc: "/images/gallery/full-after.jpg",
-    beforeAlt: "SUV before a full mobile detail package",
-    afterAlt: "SUV after a completed mobile detail package",
-    hasImages: false,
-  },
-  {
-    id: "engine-bay",
+    id: "engine-bay-cleaning",
     title: "Engine Bay Cleaning",
     beforeSrc: "/images/gallery/engine-before.jpg",
     afterSrc: "/images/gallery/engine-after.jpg",
-    beforeAlt: "Engine bay during detailing",
-    afterAlt: "Clean engine bay after professional cleaning",
-    hasImages: false,
-  },
-  {
-    id: "wheels-tires",
-    title: "Wheels & Tires",
-    beforeSrc: "/images/gallery/wheels-before.jpg",
-    afterSrc: "/images/gallery/wheels-after.jpg",
-    beforeAlt: "Wheels and lower panels before deep cleaning",
-    afterAlt: "Clean alloy wheels after detailing",
-    hasImages: false,
-  },
-  {
-    id: "dashboard",
-    title: "Dashboard Detail",
-    beforeSrc: "/images/gallery/dashboard-before.jpg",
-    afterSrc: "/images/gallery/dashboard-after.jpg",
-    beforeAlt: "Dusty dashboard and gauges before interior cleaning",
-    afterAlt: "Clean dashboard and gauges after interior detailing",
-    hasImages: false,
-  },
-  {
-    id: "paint-care",
-    title: "Paint Care",
-    beforeSrc: "/images/gallery/paint-before.jpg",
-    afterSrc: "/images/gallery/paint-after.jpg",
-    beforeAlt: "Paint surface before wash and protection",
-    afterAlt: "Glossy paint after wash and protection",
-    hasImages: false,
-  },
-  {
-    id: "mobile-service",
-    title: "Mobile Service",
-    beforeSrc: "/images/gallery/mobile-before.jpg",
-    afterSrc: "/images/gallery/mobile-after.jpg",
-    beforeAlt: "Vehicle with dirty wheels at a customer driveway before mobile detailing",
-    afterAlt: "Glossy finished vehicle after mobile detailing at the customer location",
-    hasImages: false,
+    beforeAlt: "Dusty engine bay covered in road grime before cleaning",
+    afterAlt: "Clean dressed engine bay after professional engine bay cleaning",
+    hasImages: true,
   },
 ];
 
