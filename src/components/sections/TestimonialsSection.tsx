@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { CTAButton } from "@/components/layout/CTAButton";
 import { Section } from "@/components/layout/Section";
@@ -5,7 +6,11 @@ import { ReviewCard } from "@/components/sections/ReviewCard";
 import { Heading } from "@/components/ui/Heading";
 import { Paragraph } from "@/components/ui/Paragraph";
 import { businessConfig } from "@/data/business";
-import { testimonials, testimonialsCopy } from "@/data/testimonials";
+import {
+  reviewsPageCopy,
+  testimonials,
+  testimonialsCopy,
+} from "@/data/testimonials";
 
 export function TestimonialsSection() {
   return (
@@ -33,21 +38,36 @@ export function TestimonialsSection() {
           </ul>
         ) : (
           <Paragraph size="small" className="mt-32 text-gray-dark">
-            See recent work and updates on{" "}
+            {reviewsPageCopy.yelpHint}{" "}
             <a
-              href={businessConfig.socials.instagram}
+              href={businessConfig.socials.yelp}
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-accent transition duration-DEFAULT hover:brightness-110"
             >
-              {businessConfig.instagramHandle}
+              View on Yelp
             </a>
+            {" · "}
+            <Link
+              href="/reviews"
+              className="font-medium text-accent transition duration-DEFAULT hover:brightness-110"
+            >
+              Reviews page
+            </Link>
             .
           </Paragraph>
         )}
 
-        <div className="mt-48">
+        <div className="mt-48 flex flex-col gap-16 sm:flex-row sm:items-center">
           <CTAButton />
+          <a
+            href={businessConfig.socials.yelp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-interactive inline-flex h-button items-center justify-center rounded-button border border-primary px-32 text-button font-medium text-primary hover:bg-primary hover:text-secondary"
+          >
+            {reviewsPageCopy.yelpCta}
+          </a>
         </div>
       </AnimatedSection>
     </Section>

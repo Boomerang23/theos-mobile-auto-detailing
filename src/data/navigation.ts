@@ -1,6 +1,7 @@
 export const mainNavLinks = [
   { href: "/services", label: "Services" },
   { href: "/gallery", label: "Gallery" },
+  { href: "/reviews", label: "Reviews" },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -9,6 +10,7 @@ export const mainNavLinks = [
 export const footerNavLinks = [
   { href: "/services", label: "Services" },
   { href: "/gallery", label: "Gallery" },
+  { href: "/reviews", label: "Reviews" },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },

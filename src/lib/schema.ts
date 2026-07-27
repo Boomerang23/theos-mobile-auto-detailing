@@ -26,7 +26,10 @@ export function organizationSchema(): JsonLd {
     image: absoluteUrl(siteConfig.logoPath),
     telephone: businessConfig.phone,
     address: businessAddress(),
-    sameAs: [businessConfig.socials.instagram],
+    sameAs: [
+      businessConfig.socials.instagram,
+      businessConfig.socials.yelp,
+    ],
   };
 }
 

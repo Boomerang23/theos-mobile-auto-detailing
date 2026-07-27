@@ -1,4 +1,4 @@
-import { Instagram } from "lucide-react";
+import { Instagram, Star } from "lucide-react";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { businessConfig } from "@/data/business";
@@ -90,6 +90,16 @@ export function Footer() {
                 <span className="text-small">
                   {businessConfig.instagramHandle}
                 </span>
+              </a>
+              <a
+                href={businessConfig.socials.yelp}
+                aria-label="Yelp reviews for Theo's Detailing Service"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-12 text-secondary/80 transition duration-DEFAULT hover:text-accent focus-ring-on-dark"
+              >
+                <Star className="h-24 w-24" strokeWidth={1.5} aria-hidden />
+                <span className="text-small">Yelp Reviews</span>
               </a>
             </div>
           </div>

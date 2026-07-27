@@ -1,5 +1,6 @@
 export interface SocialLinks {
   instagram: string;
+  yelp: string;
 }
 
 export interface BusinessConfig {
@@ -27,6 +28,7 @@ export const businessConfig = {
   instagramHandle: "@theosauto",
   socials: {
     instagram: "https://www.instagram.com/theosauto",
+    yelp: "https://www.yelp.com/biz/theo-mobile-auto-detailing-mukilteo",
   },
   hours: "Mon\u2013Sat 7:00 AM \u2013 5:00 PM",
 } as const satisfies BusinessConfig;

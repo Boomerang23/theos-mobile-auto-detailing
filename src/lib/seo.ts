@@ -27,6 +27,7 @@ export const siteConfig = {
     "/",
     "/services",
     "/gallery",
+    "/reviews",
     "/pricing",
     "/about",
     "/contact",

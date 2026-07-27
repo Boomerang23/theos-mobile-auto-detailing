@@ -14,9 +14,16 @@ type ReviewCardProps = {
 export function ReviewCard({ review, className }: ReviewCardProps) {
   return (
     <Card className={cn("flex h-full flex-col", className)}>
-      <RatingStars rating={review.rating} label={`${review.name} rated ${review.rating} out of 5 stars`} />
+      {review.rating ? (
+        <RatingStars
+          rating={review.rating}
+          label={`${review.name} rated ${review.rating} out of 5 stars`}
+        />
+      ) : null}
 
-      <Paragraph className="mt-24 flex-1 text-primary">
+      <Paragraph
+        className={cn("flex-1 text-primary", review.rating ? "mt-24" : undefined)}
+      >
         “{review.quote}”
       </Paragraph>
 
@@ -40,9 +47,9 @@ export function ReviewCard({ review, className }: ReviewCardProps) {
           <Heading as={3} size="card" className="text-card-title">
             {review.name}
           </Heading>
-          {review.source === "google" ? (
+          {review.source === "google" || review.source === "yelp" ? (
             <Paragraph size="small" className="mt-8 text-gray-dark">
-              Google
+              {review.source === "google" ? "Google" : "Yelp"}
             </Paragraph>
           ) : null}
         </div>

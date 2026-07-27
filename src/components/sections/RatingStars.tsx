@@ -31,8 +31,9 @@ export function RatingStars({
             key={index}
             className={cn(
               "h-16 w-16",
-              filled ? "text-accent" : "text-gray-dark",
+              filled ? "text-accent" : "text-gray-dark/40",
             )}
+            fill={filled ? "currentColor" : "none"}
             strokeWidth={1.5}
             aria-hidden
           />
