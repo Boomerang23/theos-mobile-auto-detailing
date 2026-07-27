@@ -22,7 +22,10 @@ export function ReviewCard({ review, className }: ReviewCardProps) {
       ) : null}
 
       <Paragraph
-        className={cn("flex-1 text-primary", review.rating ? "mt-24" : undefined)}
+        className={cn(
+          "flex-1 whitespace-pre-line text-primary",
+          review.rating ? "mt-24" : undefined,
+        )}
       >
         “{review.quote}”
       </Paragraph>
@@ -50,6 +53,7 @@ export function ReviewCard({ review, className }: ReviewCardProps) {
           {review.source === "google" || review.source === "yelp" ? (
             <Paragraph size="small" className="mt-8 text-gray-dark">
               {review.source === "google" ? "Google" : "Yelp"}
+              {review.date ? ` · ${review.date}` : null}
             </Paragraph>
           ) : null}
         </div>

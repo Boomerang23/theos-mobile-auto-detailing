@@ -74,9 +74,7 @@ export default function ServicesPage() {
                   <ul className="mt-24 flex flex-col gap-12">
                     {category.services.map((item) => (
                       <ServiceFeature key={item.name}>
-                        {item.requiresQuote
-                          ? `${item.name} (quote required)`
-                          : item.name}
+                        {item.name}
                       </ServiceFeature>
                     ))}
                   </ul>
