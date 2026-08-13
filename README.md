@@ -1,6 +1,6 @@
 # Theo's Mobile Auto Detailing
 
-Premium marketing website for Theo's Mobile Auto Detailing — a mobile auto detailing business in the United States. Built with Next.js, TypeScript, and Tailwind CSS.
+Premium marketing website for Theo's Mobile Auto Detailing, a mobile auto detailing business in the United States. Built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Tech Stack
 
@@ -157,4 +157,4 @@ Hosted on Vercel. See `DEPLOYMENT.md` for the production checklist and environme
 
 ## License
 
-Private — all rights reserved.
+Private  all rights reserved.
